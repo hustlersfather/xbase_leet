@@ -1,7 +1,7 @@
 <?php
 
 
-$dbcon = mysqli_connect("localhost","root","root123","marketblack") or die('enable connection'); 
+$dbcon = mysqli_connect("localhost","root","xbase_leet","marketblack") or die('enable connection'); 
 
 
 
