@@ -10,71 +10,26 @@ if (!isset($_SESSION['sname']) and !isset($_SESSION['spass'])) {
 }
 $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
 ?>
-<!doctype html>
+<!DOCTYPEhtml>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="files/bootstrap/3/css/bootstrap.css?1" />
-<link rel="stylesheet" type="text/css" href="files/css/flags.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css">
-<script type="text/javascript" src="files/js/jquery.js?1"></script>
-<script type="text/javascript" src="files/bootstrap/3/js/bootstrap.js?1"></script>
-<script type="text/javascript" src="files/js/sorttable.js"></script>
-<script type="text/javascript" src="files/js/table-head.js?3334"></script>
-<script type="text/javascript" src="files/js/bootbox.min.js"></script>
-<script type="text/javascript" src="files/js/clipboard.min.js"></script>
-
-<link rel="shortcut icon" href="files/img/favicon.ico" />
-<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" /> 
- <meta name="referrer" content="no-referrer" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<title>AlhwaShop</title>
-</head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="revisit-after" content="2 days">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script src="/cdn-cgi/apps/head/5OOZijtrf_Bpx-OYIJIWKuxGuQM.js"></script>
+	<link rel="shortcut icon" href="../../favicon.ico" />
+<title>OdinShop</title>
+<link rel="stylesheet" href="files/bootstrap/3/css/bootstrap.min.css">
+<script src="files/js/jquery-3.4.1.min.js"></script>
+<script src="files/js/clipboard.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="files/js/bootstrap.min.js"></script>
+<script src="files/js/bootbox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="files/css/flags.css" 
+https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css>
 <style>
-#table {
-  .sortable
-}
-table th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sorttable_nosort):after { 
-    content: " \25BE" 
-}
-
-.label-as-badge {
-    border-radius: 0.5em;
-}
-
-body {
-    padding-top:50px;
-}
-table.floatThead-table {
-    border-top: none;
-    border-bottom: none;
-    background-color: #fff;
-}
-@media (min-width: 768px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-
-#mydiv {
-  height: 400px;
-  position: relative;
-}
-.ajax-loader {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto; /* presto! */
-
-}
-
-   
-    
-
-</style>
+	
 <script type="text/javascript">
              function ajaxinfo() {
                 $.ajax({
@@ -173,54 +128,72 @@ function setTooltip(btn, message) {
 function hideTooltip(btn) {
   setTimeout(function() {$(btn).tooltip('hide'); console.log("hide-2");}, 1000);
 }
-</script>
-		<style>
-            .navbar {
-                background-color: #001f3f;
-            }
-        </style>
+
+	</script>
+
 <body style="padding-top: 70px; padding-bottom: 70px;">
 
-<nav class="navbar navbar-default navbar-fixed-top ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-    <div class="navbar-brand" onClick="location.href='index.html'" onMouseOver="this.style.cursor='pointer'"><b><span class="glyphicon glyphicon-fire"></span> Alhwa SHOP <small><span class="glyphicon glyphicon-refresh"></span></small></b></div></div>
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="topFixedNavbar1">
-      <ul class="nav navbar-nav">
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hosts <span class="glyphicon glyphicon-chevron-down" id="alhosts"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="rdp.html" onclick="pageDiv(1,'RDP - AlhwaShop','rdp.html',0); return false;">RDPs <span class="label label-primary label-as-badge" id="rdp"></span></a></li>
-            <li><a href="cPanel.html" onclick="pageDiv(2,'cPanel - AlhwaShop','cPanel.html',0); return false;">cPanels <span class="label label-primary label-as-badge" id="cpanel"></span></a></li>
-            <li><a href="shell.html" onclick="pageDiv(3,'Shell - AlhwaShop','shell.html',0); return false;">Shells <span class="label label-primary label-as-badge" id="shell"></span></a></li>  
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar white">
+      <div class="container">
+        <a class="navbar-brand font-weight-bold title" href="../home/main.html">Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="list-unstyled navbar-nav mr-auto">
+            <li class="nav-item dropdown ml-4 mb-0">
+              <a class="nav-link dropdown-toggle title" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false"> Homepage </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../home/home-parallax.html">Home Parallax</a>
+                <a class="dropdown-item" href="../home/home-slider.html">Home Slider</a>
+                <a class="dropdown-item" href="../home/home-video-background.html">Home Video Background</a>
+                <a class="dropdown-item" href="../home/home-gradient.html">Home Gradient</a>
+                <a class="dropdown-item" href="../home/home-gradient-animation.html">Home Gradient Animation</a>
+                <a class="dropdown-item" href="../home/home-video.html">Home Video</a>
+                <a class="dropdown-item" href="../home/home-onepage.html">One Page Layout</a>
+                <a class="dropdown-item" href="../home/coming-soon.html">Coming Soon</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="nav-link dropdown-toggle title" id="navbarDropdownMenuLink12" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Features </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../features/features.html">Features</a>
+                <a class="dropdown-item" href="../features/feature-detail.html">Feature Detail</a>
+                <a class="dropdown-item" href="../features/services.html">Services</a>
+                <a class="dropdown-item" href="../features/typography.html">Typography</a>
+              </div>
+            </li>
+            <li class="nav-item ml-4">
+              <a class="nav-link title" href="../pricing/pricing.html" data-offset="90">Pricing</a>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="nav-link dropdown-toggle title" id="navbarDropdownMenuLink2" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Pages </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../pages/about.html">About us</a>
+                <a class="dropdown-item" href="../pages/testimonials.html">Testimonials</a>
+                <a class="dropdown-item" href="../pages/contact.html">Contact</a>
+                <a class="dropdown-item" href="../pages/register.html">Register</a>
+                <a class="dropdown-item" href="../pages/login.html">Login</a>
+                <a class="dropdown-item" href="../pages/gallery.html">Gallery</a>
+                <a class="dropdown-item" href="../pages/faq.html">FAQ</a>
+                <a class="dropdown-item" href="../pages/404.html">Error 404</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown ml-4">
+              <a class="nav-link dropdown-toggle title" id="navbarDropdownMenuLink3" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Blog </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="../blog/blog-standard.html">Blog Standard</a>
+                <a class="dropdown-item" href="../blog/blog-3columns.html">Blog 3 Columns</a>
+                <a class="dropdown-item" href="../blog/blog-post.html">Blog Post</a>
+              </div>
+            </li>
           </ul>
-        </li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Send <span class="glyphicon glyphicon-chevron-down" id="mail"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="mailer.html" onclick="pageDiv(4,'PHP Mailer - AlhwaShop','mailer.html',0); return false;">Mailers <span class="label label-primary label-as-badge" id="mailer"></span></a></li>
-            <li><a href="smtp.html" onclick="pageDiv(5,'SMTP - AlhwaShop','smtp.html',0); return false;">SMTPs <span class="label label-primary label-as-badge" id="smtp"></span></a></li>  
-          </ul>
-        </li>
-                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Leads <span class="glyphicon glyphicon-chevron-down" id="all_leads"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="leads.html" onclick="pageDiv(6,'Leads - AlhwaShop','leads.html',0); return false;">Leads <span class="label label-primary label-as-badge" id="leads"></span></a></li>
-          </ul>
-        </li>
-				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Accounts <span class="glyphicon glyphicon-chevron-down" id="accounts"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="premium.html" onclick="pageDiv(7,'Premium/Dating/Shop - AlhwaShop','premium.html',0); return false;">Premium/Dating/Shop <span class="label label-primary label-as-badge" id="premium"></span></a></li>
-            <li><a href="banks.html" onclick="pageDiv(8,'Banks - AlhwaShop','banks.html',0); return false;">Banks <span class="label label-primary label-as-badge" id="banks"></span></a></li>  
-          </ul>
-        </li>
-        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Others <span class="glyphicon glyphicon-chevron-down" id="accounts"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="scampage.html" onclick="pageDiv(9,'Scampages - AlhwaShop','scampage.html',0); return false;">Scampage <span class="label label-primary label-as-badge" id="scams"></span></a></li>
-            <li><a href="tutorial.html" onclick="pageDiv(10,'Tutorials - AlhwaShop','tutorial.html',0); return false;">Tutorial <span class="label label-primary label-as-badge" id="tutorials"></span></a></li>  
-          </ul>
-        </li>
-                      
-      </ul>
       <ul class="nav navbar-nav navbar-right">
                         <?php
 $uid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
