@@ -1,17 +1,4 @@
-<?php
-ob_start();
-session_start();
-date_default_timezone_set('UTC');
-include "includes/config.php";
 
-if (!isset($_SESSION['sname']) and !isset($_SESSION['spass'])) {
-    header("location: login.html");
-    exit();
-}
-$usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
-?>
-<!DOCTYPEhtml>
-<html
 
 <!DOCTYPE html>
 <html>
@@ -21,15 +8,14 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
 <meta name="alfacoins-site-verification" content="5ef8c2279aa605ef8c2279aa965ef8c2279aacb_ALFAcoins">
 <meta name="revisit-after" content="2 days">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<script src="/cdn-cgi/apps/head/5OOZijtrf_Bpx-OYIJIWKuxGuQM.js"></script><link rel="shortcut icon" href="../../favicon.ico" />
+<script src="/cdn-cgi/apps/head/5OOZijtrf_Bpx-OYIJIWKuxGuQM.js"></script>
+<link rel="shortcut icon" href="../../favicon.ico" />
 <title>OdinShop</title>
-<link rel="stylesheet" href="layout/css/bootstrap.min.css">
-<script src="layout/js/jquery-3.4.1.min.js"></script>
-<script src="layout/js/clipboard.min.js"></script>
+<link rel="stylesheet" href="files/bootstrap/3/css/bootstrap.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="layout/js/bootstrap.min.js"></script>
-<script src="layout/js/bootbox.min.js"></script>
-<link rel="stylesheet" type="text/css" href="layout/css/flags.css" />
+<script src="files/bootstrap/3/css/bootstrap.min.cs"></script>
+<script src="files/js/bootbox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="files/css/flags.css" />
 
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
 <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css">
@@ -599,7 +585,7 @@ a.closearb {
 </div><br>
 <div class="header-body">
 
-<div class="row">
+ <div class="row">
 <div class="col-md-3 col-sm-6">
 <div class="card card-stats">
 <div class="card-body">
@@ -873,7 +859,7 @@ Latest 10 Sold Tools
 <ul class="list-group list-group-flush" style="color: var(--font-color); background-color: var(--color-card);">
 <li class="list-group-item" style="color: var(--font-color); background-color: var(--color-card);">
 <b>Seller306</b> Sold <font color="green"><b>
-<a class="text-success" href="rdp">rdp</a></b></font> To <b>Buyer19019</b>, 2023-02-04 00:46:01 </li>
+ <a class="text-success" href="rdp">rdp</a></b></font> To <b>Buyer19019</b>, 2023-02-04 00:46:01 </li>
 <li class="list-group-item" style="color: var(--font-color); background-color: var(--color-card);">
 <b>Seller341</b> Sold <font color="green"><b>
 <a class="text-success" href="cPanel">cpanel</a></b></font> To <b>Buyer17916</b>, 2023-02-03 22:45:43 </li>
@@ -1065,9 +1051,66 @@ Our Stuff
 </div>
 <canvas id="myPieChart" width="278" height="278" style="display: block; width: 278px; height: 278px;" class="chartjs-render-monitor"></canvas>
 </div>
-<div class="card-footer small text-primary" style="color: var(--font-color); background-color: var(--color-card);">Page Loaded in 1.0268 Seconds</div>
+<div class="card-footer small text-primary" style="color: var(--font-color); background-color: var(--color-card);">Page Loaded in 0.9763 Seconds</div>
 </div>
 </div>
 </div>
 </div>
 
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/60bb67b9dd60a20abbe4bab4/1f7e0qbvo';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+<script type="text/javascript" src="layout/js/Chart.min.js"></script>
+<script>var clipboard = new Clipboard('.copydiv');</script>
+ <script type="text/javascript">
+
+
+	            // Set new default font family and font color to mimic Bootstrap's default styling
+	            Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
+	            Chart.defaults.global.defaultFontColor = '#2196F3';
+
+	            // Pie Chart Example
+	            var ctx = document.getElementById("myPieChart");
+	            var myPieChart = new Chart(ctx, {
+	              type: 'pie',
+	              data: {
+	                labels: ['cPanels [8988]','Leads [31]','Shells [1758]','RDPs [72]','Mailers [433]','Scripts [3]', 'Tutorials [0]', 'Accounts [1549]', 'SMTPs [1784]', 'Webmails [12134]', 'FTPs [81]', 'SSH [158]'],
+	                datasets: [{
+	                  data: ['8988','31','1758','72','433','3','0', '1549','1784','12134', '81', '158'],
+	                  backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745','#e1297d','#551a8b', '#D5B0F7', '#B5D2ED', '#212529', '#256633', '#633256', '#97de12' ],
+	                }],
+	              },
+
+	              options:{
+	            	  cutoutPercentage:50,
+	                tooltips: {
+	                callbacks: {
+	                  label: function(tooltipItem, data) {
+	                    var dataset = data.datasets[tooltipItem.datasetIndex];
+	                    var meta = dataset._meta[Object.keys(dataset._meta)[0]];
+	                    var total = meta.total;
+	                    var currentValue = dataset.data[tooltipItem.index];
+	                    var percentage = parseFloat((currentValue/total*100).toFixed(1));
+	                    return currentValue + ' (' + percentage + '%)';
+	                  },
+	                  title: function(tooltipItem, data) {
+	                    return data.labels[tooltipItem[0].index];
+	                  }
+	                }
+	              }
+	            }
+	            });
+	        </script>
+</div>
+</div>
+<script>(function(){var js = "window['__CF$cv$params']={r:'7940202ecf128f20',m:'pcc1SxMuNGnW1.ff4nYLsVzMtsJ0b8t3E.xXug0NcI0-1675479309-0-ASgaSaXBmg2FE1CvMCBt35JvxZZoEdJ7eQpzjsmGz6OHfC18qNJjESHAdHlcfvk1O2ebk8SgH9AwDWUBrrwxEL9yLktCBz8xHCsYDn6tnwjulRO3jQizaxSojRgSqC4O7w==',s:[0x0dd7383a18,0x31997e6af0],u:'/cdn-cgi/challenge-platform/h/b'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/b/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
+</html>
