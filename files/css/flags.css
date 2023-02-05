@@ -27,6 +27,9 @@
 .flag-icon-ae {
   background-image: url(../img/flags/4x3/ae.svg);
 }
+.flag-icon-ww {
+  background-image: url(../img/flags/4x3/ww.svg);
+}
 .flag-icon-ae.flag-icon-squared {
   background-image: url(../img/flags/1x1/ae.svg);
 }
