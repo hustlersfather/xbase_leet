@@ -1,4 +1,3 @@
-
 <?php
 ob_start();
 session_start();
@@ -14,17 +13,19 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
 <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="files/bootstrap/3/css/bootstrap.css?1" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.lite.min.css" integrity="sha512-Eu5EEZpsrO6niYlnhT+ITom/YVGoIZGEsbAvZ+gUJsO3Xaq9+hX4vZnbecMn/Cq5KOdmNOdehu/U80111W9xsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="shortcut icon" href="files/img/favicon.ico" />
 <meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=7; IE=EDGE" /> 
  <meta name="referrer" content="no-referrer" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
+
 <title>AlhwaShop</title>
+<link rel="stylesheet" type="text/css" href="files/bootstrap/3/css/bootstrap.css?1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.lite.min.css" integrity="sha512-Eu5EEZpsrO6niYlnhT+ITom/YVGoIZGEsbAvZ+gUJsO3Xaq9+hX4vZnbecMn/Cq5KOdmNOdehu/U80111W9xsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 </head>
 <style>
 #table {
@@ -64,105 +65,7 @@ table.floatThead-table {
     
 
 </style>
-<script type="text/javascript">
-             function ajaxinfo() {
-                $.ajax({
-                    type: 'GET',
-                    url: 'ajaxinfo.html',
-                    timeout: 10000,
 
-                    success: function(data) {
-                        if (data != '01') {
-                            var data = JSON.parse(data);
-                            for (var prop in data) {
-                                $("#" + prop).html(data[prop]).show();
-                            }
-                        } else {
-                            window.location = "logout.html";
-                        }
-                    }
-                });
-
-            }
-            setInterval(function() {
-                ajaxinfo()
-            }, 3000);
-
-            ajaxinfo();
-
-$(document).keydown(function(event){
-    if(event.which=="17")
-        cntrlIsPressed = true;
-});
-
-$(document).keyup(function(){
-    cntrlIsPressed = false;
-});
-
-var cntrlIsPressed = false;
-
-
-function pageDiv(n,t,u,x){
-  if(cntrlIsPressed){
-    window.open(u, '_blank');
-    return false;
-  }
-        var obj = { Title: t, Url: u };
-        if ( ("/"+obj.Url) != location.pathname) {
-        	if (x != 1) {history.pushState(obj, obj.Title, obj.Url);}
-        	else{history.replaceState(obj, obj.Title, obj.Url);}
-
-    	}
-      document.title = obj.Title;
-    $("#mainDiv").html('<div id="mydiv"><img src="files/img/load2.gif" class="ajax-loader"></div>').show();
-    $.ajax({
-    type:       'GET',
-    url:        'divPage'+n+'.html',
-    success:    function(data)
-    {
-        $("#mainDiv").html(data).show();
-        newTableObject = document.getElementById('table');
-        sorttable.makeSortable(newTableObject);
-        $(".sticky-header").floatThead({top:60});
-        if(x==0){ajaxinfo();}
-      }});
-    if (typeof stopCheckBTC === 'function') { 
-    var a = stopCheckBTC();
-     }
-
-}
-
-$(window).on("popstate", function(e) {
-        location.replace(document.location);
-
-});
-
-
-$(window).on('load', function() {
-$('.dropdown').hover(function(){ $('.dropdown-toggle', this).trigger('click'); });
-   pageDiv(0,'Main - AlhwaShop','index.html',1);
-   var clipboard = new Clipboard('.copyit');
-    clipboard.on('success', function(e) {
-      setTooltip(e.trigger, 'Copied!');
-      hideTooltip(e.trigger);
-      e.clearSelection();
-   });
-
-});
-
-
-function setTooltip(btn, message) {
-  console.log("hide-1");
-  $(btn).tooltip('hide')
-    .attr('data-original-title', message)
-    .tooltip('show');
-     console.log("show");
-}
-
-function hideTooltip(btn) {
-  setTimeout(function() {$(btn).tooltip('hide'); console.log("hide-2");}, 1000);
-}
-</script>
 		<style>
             @import url(//fonts.googleapis.com/css?family=Roboto:400);
             .navbar-nav .dropdown-menu
@@ -471,6 +374,105 @@ if ($r1 == "1") {
             <li class="divider"></li>
             <li><a href="logout.html" >Logout <span class="glyphicon glyphicon-off pull-right"></span></a></li>
           </ul>
+          <script type="text/javascript">
+             function ajaxinfo() {
+                $.ajax({
+                    type: 'GET',
+                    url: 'ajaxinfo.html',
+                    timeout: 10000,
+
+                    success: function(data) {
+                        if (data != '01') {
+                            var data = JSON.parse(data);
+                            for (var prop in data) {
+                                $("#" + prop).html(data[prop]).show();
+                            }
+                        } else {
+                            window.location = "logout.html";
+                        }
+                    }
+                });
+
+            }
+            setInterval(function() {
+                ajaxinfo()
+            }, 3000);
+
+            ajaxinfo();
+
+$(document).keydown(function(event){
+    if(event.which=="17")
+        cntrlIsPressed = true;
+});
+
+$(document).keyup(function(){
+    cntrlIsPressed = false;
+});
+
+var cntrlIsPressed = false;
+
+
+function pageDiv(n,t,u,x){
+  if(cntrlIsPressed){
+    window.open(u, '_blank');
+    return false;
+  }
+        var obj = { Title: t, Url: u };
+        if ( ("/"+obj.Url) != location.pathname) {
+            if (x != 1) {history.pushState(obj, obj.Title, obj.Url);}
+            else{history.replaceState(obj, obj.Title, obj.Url);}
+
+        }
+      document.title = obj.Title;
+    $("#mainDiv").html('<div id="mydiv"><img src="files/img/load2.gif" class="ajax-loader"></div>').show();
+    $.ajax({
+    type:       'GET',
+    url:        'divPage'+n+'.html',
+    success:    function(data)
+    {
+        $("#mainDiv").html(data).show();
+        newTableObject = document.getElementById('table');
+        sorttable.makeSortable(newTableObject);
+        $(".sticky-header").floatThead({top:60});
+        if(x==0){ajaxinfo();}
+      }});
+    if (typeof stopCheckBTC === 'function') { 
+    var a = stopCheckBTC();
+     }
+
+}
+
+$(window).on("popstate", function(e) {
+        location.replace(document.location);
+
+});
+
+
+$(window).on('load', function() {
+$('.dropdown').hover(function(){ $('.dropdown-toggle', this).trigger('click'); });
+   pageDiv(0,'Main - ','index.html',1);
+   var clipboard = new Clipboard('.copyit');
+    clipboard.on('success', function(e) {
+      setTooltip(e.trigger, 'Copied!');
+      hideTooltip(e.trigger);
+      e.clearSelection();
+   });
+
+});
+
+
+function setTooltip(btn, message) {
+  console.log("hide-1");
+  $(btn).tooltip('hide')
+    .attr('data-original-title', message)
+    .tooltip('show');
+     console.log("show");
+}
+
+function hideTooltip(btn) {
+  setTimeout(function() {$(btn).tooltip('hide'); console.log("hide-2");}, 1000);
+}
+</script>
         </li>
       </ul>
     </div>
@@ -478,6 +480,54 @@ if ($r1 == "1") {
   </div>
   <!-- /.container-fluid -->
 </nav>
+<div>
+    <?php
+ echo'
+<div class="form-group col-lg-7 ">
+<div class="well">
+  Hello <a class="label label-primary">'.$usrid.'</a><br>
+    If you have any <b>Question</b> ,<b>Problem</b>, <b>Suggestion</b> or <b>Request</b> Please feel free to <a class="label label-default " href="tickets.html"><span class="glyphicon glyphicon-pencil"></span> Open a Ticket</a><br>
+    if you want to report an order , just go to <abbr title="Account - > My Orders or Click here" >My Orders  <span class="glyphicon glyphicon-shopping-cart"></span></abbr> 
+    then click on <a class="label label-primary">Report #[Order Id]</a> button<br><br>
+    Our Domains are <b>Alhwa.to</b> || <b>Alhwa.xyz</b> || <b>Alhwa.shop</b> || <b>Alhwa.pw</b> - Please Save them!
+
+</div>
+
+    <div class="list-group" id="div2">
+        <h3><i class="glyphicon glyphicon-info-sign"></i> News</h3>'; 
+         $qq = @mysqli_query($dbcon, "SELECT * FROM news ORDER by id desc LIMIT 5") or die("error here"); 
+
+                
+while($r = mysqli_fetch_assoc($qq)){                echo'<a class="list-group-item"><h5 class="list-group-item-heading"><b>'.stripcslashes($r['content']).'</b></h5><h6 class="list-group-item-text">'.$r['date'].'</h6></a>'; 
+}
+ echo '
+
+                 </div>
+
+</div>
+<div class="form-group col-lg-4 ">
+    <!-- <img src="files/img/eid.jpg" style="width: 70%; height: 70%" title="Eid Mubarak"> -->
+<iframe src="static.html" style="border:none;" width="400" height="270" scrolling="no">Browser not compatible.</iframe>
+
+    ';
+    ?>
+    <div class="well well-sm">    
+                  <h4><b>Our Support team is here !</b></h4><a class="btn btn-default btn-sm" onclick="pageDiv(9,'Tickets - OluxShop','tickets.html#open',0); return false;" href="tickets.html#open"><span class="glyphicon glyphicon-pencil"></span> Open a Ticket</a>
+                  <h5><b>Interested in becoming a seller at  Olux Shop ?</b></h5><a class="btn btn-primary btn-xs" href="seller.html" onclick="pageDiv(24,'Become Seller  - OluxShop','seller.html',0); return false;">Learn more</a>
+                  <h5><b>Available Payment Methods </b></h5>
+
+                  <img src="files/img/pmlogo2.png" height="48" width="49" title="PerfectMoney" onclick="pageDiv(11,'Add Balance - OluxShop','addBalance.html#perfectmoney',0); return false;" href="addBalance.html#perfectmoney" onmouseover="this.style.cursor='pointer'">
+                  <img src="files/img/btclogo.png" height="48" width="49" title="Bitcoin" onclick="pageDiv(11,'Add Balance - OluxShop','addBalance.html#bitcoin',0); return false;" href="addBalance.html#bitcoin" onmouseover="this.style.cursor='pointer'">
+                 
+      </div>
+    <?php
+    echo '
+                 
+      </div>
+  </div>
+'; ?>
+
+</div>
 <div id="mainDiv">
 
 
@@ -489,7 +539,6 @@ if ($r1 == "1") {
 <script type="text/javascript" src="files/js/table-head.js?3334"></script>
 <script type="text/javascript" src="files/js/bootbox.min.js"></script>
 <script type="text/javascript" src="files/js/clipboard.min.js"></script>
-<script type="text/javascript" src="files/js/main.js"></script>
 </body>
 </html>
 
