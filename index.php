@@ -21,9 +21,10 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AlhwaShop</title>
+<title>XBASELEET</title>
 <link rel="stylesheet" type="text/css" href="files/bootstrap/3/css/bootstrap.css?1" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.lite.min.css" integrity="sha512-Eu5EEZpsrO6niYlnhT+ITom/YVGoIZGEsbAvZ+gUJsO3Xaq9+hX4vZnbecMn/Cq5KOdmNOdehu/U80111W9xsA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" type="text/css" href="files/css/flags.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css" integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
 </head>
@@ -372,8 +373,40 @@ if ($r1 == "1") {
             <li><a href="addBalance.html" onclick="pageDiv(13,'Add Balance - AlhwaShop','addBalance.html',0); return false;">Add Balance <span class="glyphicon glyphicon-usd pull-right"></span></a></li>
             
             <li class="divider"></li>
+
+
+
             <li><a href="logout.html" >Logout <span class="glyphicon glyphicon-off pull-right"></span></a></li>
+
+
+            xx
           </ul>
+          <script async src="//www.googletagmanager.com/gtag/js?id=UA-177092549-1"></script>
+<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('set', {'$usrid': 'USER_ID'}); // Set the user ID using signed-in user_id.
+        gtag('config', 'UA-177092549-1');
+        </script>
+<link rel="stylesheet" href="files/css/all.min.css" />
+<link rel="stylesheet" href="files/css/main.css?v=12.9" />
+<link rel="stylesheet" href="files/css/util.css" />
+<style>body{padding-top:80px}</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="files/js/main.js"></script>
+<script type="text/javascript">
+            // Notice how this gets configured before we load Font Awesome
+            window.FontAwesomeConfig = { autoReplaceSvg: false }
+        </script>
+<style>
+            @import url(//fonts.googleapis.com/css?family=Roboto:400);
+            .navbar-nav .dropdown-menu
+            {
+            margin:0 !important
+            }
+        </style>
+</head>
           <script type="text/javascript">
              function ajaxinfo() {
                 $.ajax({
@@ -532,7 +565,13 @@ while($r = mysqli_fetch_assoc($qq)){                echo'<a class="list-group-it
 
 
 </div>
-<link rel="stylesheet" type="text/css" href="files/css/flags.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js" integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js" integrity="sha512-6UofPqm0QupIL0kzS/UIzekR73/luZdC6i/kXDbWnLOJoqwklBK6519iUnShaYceJ0y4FaiPtX/hRnV/X/xlUQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/datatables-responsive/2.4.0/dataTables.responsive.min.js" integrity="sha512-UEtHfW1dblwNO8FPaTWSG2V3Jv9omJDhGWFdVFaSF8wd9TlVk0Nyk47RgoTJ03cA2Hfz8rjOJ8xhJpiNIJcErw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+</script>
 <script type="text/javascript" src="files/js/jquery.js?1"></script>
 <script type="text/javascript" src="files/bootstrap/3/js/bootstrap.js?1"></script>
 <script type="text/javascript" src="files/js/sorttable.js"></script>
