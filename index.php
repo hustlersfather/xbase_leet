@@ -21,7 +21,7 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>XBASELEET</title>
+<link rel="stylesheet" type="text/css" href="files/bootstrap/3/css/util.css"/>
 <link rel="stylesheet" type="text/css" href="files/bootstrap/3/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="files/css/flags.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/css/mdb.min.css" integrity="sha512-hj9rznBPdFg9A4fACbJcp4ttzdinMDtPrtZ3gBD11DiY3O1xJfn0r1U5so/J0zwfGOzq9teIaH5rFmjFAFw8SA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
