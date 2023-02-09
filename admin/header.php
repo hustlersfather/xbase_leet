@@ -11,10 +11,6 @@ if(!isset($_SESSION['sname']) and !isset($_SESSION['sname'])){
    header("location: ../login.html");
    exit();
 }
-$usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
-if($usrid !== "reseller") {
-	die();
-}
 ?>
 <!DOCTYPE html>
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
