@@ -12,7 +12,7 @@ if(!isset($_SESSION['sname']) and !isset($_SESSION['sname'])){
    exit();
 }
 $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
-if($usrid !== "freshtools") {
+if($usrid !== "reseller") {
 	die();
 }
 ?>
