@@ -41,11 +41,11 @@
             gtag('config', 'UA-177092549-1');
         </script>
         
-        <link rel="stylesheet" href="files/bootstrap/3/css/all.min.css">
+        <link rel="stylesheet" href="files/css/all.min.css">
         <link rel="stylesheet" href="files/css/main.css">
         <link rel="stylesheet" href="files/css/util.css">
         <style>body{padding-top:80px}</style>
-        <link rel="stylesheet" href="files/fonts/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="files/bootstrap/3/fonts/iconic/css/material-design-iconic-font.min.css">
         <script src="files/js/main.js"></script>
         <script type="text/javascript">
             // Notice how this gets configured before we load Font Awesome
