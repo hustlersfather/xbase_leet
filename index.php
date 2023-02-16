@@ -14,9 +14,9 @@
         <script src="files/bootstrap/3/js/jquery-3.4.1.min.js"></script>
         <script src="files/js/clipboard.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script src="layout/js/bootstrap.min.js"></script>
-        <script src="layout/js/bootbox.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="layout/css/flags.css">
+        <script src="files/bootstrap/3/js/bootstrap.min.js"></script>
+        <script src="files/js/bootbox.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="files/css/flags.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css">
         <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.6.4/css/buttons.dataTables.min.css">
@@ -27,9 +27,11 @@
         <script src="js/jquery.dataTables.min.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-        <style type="text/css">/* Chart.js */
+        <style type="text/css">
+        /* Chart.js */
             @-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}
         </style>
+        
         <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-177092549-1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -38,11 +40,12 @@
             gtag('set', {'$usrid': 'USER_ID'}); // Set the user ID using signed-in user_id.
             gtag('config', 'UA-177092549-1');
         </script>
+        
         <link rel="stylesheet" href="files/bootstrap/3/css/all.min.css">
         <link rel="stylesheet" href="files/css/main.css">
-        <link rel="stylesheet" href="layout/css/util.css">
+        <link rel="stylesheet" href="files/css/util.css">
         <style>body{padding-top:80px}</style>
-        <link rel="stylesheet" href="layout/fonts/iconic/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="files/fonts/iconic/css/material-design-iconic-font.min.css">
         <script src="files/js/main.js"></script>
         <script type="text/javascript">
             // Notice how this gets configured before we load Font Awesome
@@ -54,7 +57,8 @@
             margin:0 !important
             }
         </style>
-        <style>.navbar-nav .dropdown-menu
+        <style>
+        .navbar-nav .dropdown-menu
             {
             margin:0 !important
             }
