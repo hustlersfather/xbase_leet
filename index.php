@@ -260,16 +260,16 @@
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-tie fa-sm"></i> Accounts
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="business-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-business-time"></i> cPanel Webmail <span class="badge badge-primary">2336</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="business-2.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-mail-bulk"></i> Godaddy Webmail <span class="badge badge-primary">83</span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="business-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-business-time"></i> Premium<span class="badge badge-primary"><span id="scampage"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="business-2.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-mail-bulk"></i> USA Bank(Full INFO) <span class="badge badge-primary"><span id="scampage"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-friends fa-sm"></i>Other (Logs Info)
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="scampage" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-comments-dollar"></i> O <span class="badge badge-primary"><span id="scampage"></span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="tutorial" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-server"></i>USA Bank(Full INFO) <span class="badge badge-primary"><span id="Banks"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="scampage" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-comments-dollar"></i>Scampage/Script/letter <span class="badge badge-primary"><span id="scampage"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="tutorial" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-server"></i>Tuto/Cashout/Methods<span class="badge badge-primary"><span id="Tutorial"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
@@ -284,14 +284,9 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav profile">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell text-danger"></i> <span class="badge badge-success">0</span></a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color: var(--font-color); background-color: var(--color-nav);">
-                            <a class="dropdown-item waves-effect waves-light" href="#" style="color: var(--font-color);">There is no new notifications</a> 
-                        </div>
-                    </li>
+        
                     <li class="nav-item">
-                        <a class="nav-link waves-effect waves-light" href="addBalance.html" style="color: var(--font-color);" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge badge-danger">
+                        <a class="nav-link waves-effect waves-light" href="addBalance" style="color: var(--font-color);" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge badge-danger">
                         0
                         <span class="px-2"><i class="fa fa-plus"></i></span></span>
                         </a>
@@ -299,20 +294,19 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Ticket <span class="badge badge-success">0</span></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color: var(--font-color); background-color: var(--color-nav);">
-                            <a class="dropdown-item waves-effect waves-light" href="orders.html" style="color: var(--font-color);"><span class="px-2">Report Items</span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="tickets.html" style="color: var(--font-color);"><span class="px-2">My Tickets <span class="badge badge-success">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="reports.html" style="color: var(--font-color);"><span class="px-2">My Reports <span class="badge badge-success">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="OpenTicket.html" style="color: var(--font-color);"><span class="px-2">New Ticket</span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="orders" style="color: var(--font-color);"><span class="px-2">Report Items</span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="tickets" style="color: var(--font-color);"><span class="px-2">My Tickets <span class="badge badge-success">0</span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="reports" style="color: var(--font-color);"><span class="px-2">My Reports <span class="badge badge-success">0</span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> hustlersfather <i class="fa fa-user-secret" style="color: var(--font-color);"></i></a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="color: var(--font-color); background-color: var(--color-nav);">
-                            <a class="dropdown-item waves-effect waves-light" href="setting.html" style="color: var(--font-color);"><span class="px-2">Setting <i class="fa fa-cog"></i></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="seller-profile.html" style="color: var(--font-color);"><span class="px-2">Profile <i class="fa fa-user"></i></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="orders.html" style="color: var(--font-color);"><span class="px-2">My Orders <i class="fa fa-shopping-cart"></i></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="addBalance.html" style="color: var(--font-color);"><span class="px-2">Add Balance <i class="fa fa-money-bill-alt"></i></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="login.html" style="color: var(--font-color);"><span class="px-2">Logout <i class="fa fa-door-open"></i></span></a>
+                            
+                            <a class="dropdown-item waves-effect waves-light" href="setting" style="color: var(--font-color);"><span class="px-2">Setting <i class="fa fa-cog"></i></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="orders" style="color: var(--font-color);"><span class="px-2">My Orders <i class="fa fa-shopping-cart"></i></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="addBalance" style="color: var(--font-color);"><span class="px-2">Add Balance <i class="fa fa-money-bill-alt"></i></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="login" style="color: var(--font-color);"><span class="px-2">Logout <i class="fa fa-door-open"></i></span></a>
                         </div>
                     </li>
                 </ul>
