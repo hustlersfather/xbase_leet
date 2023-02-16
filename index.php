@@ -238,7 +238,7 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
             padding-bottom: 0.5rem;
             padding-left: 1rem;
             ">
-            <a class="navbar-brand" href="main.html" style="color: var(--font-color);"><img width="40px" src="layout/images/logo.png"> Odin</a>
+            <a class="navbar-brand" href="index.html" style="color: var(--font-color);"><img width="40px" src="layout/images/logo.png"> XBASELEET</a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="navbar-toggler-icon"></i>
             </button>
@@ -249,9 +249,9 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
                         Hosts
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="rdp.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-desktop fa-fw"></i> RDPs <span class="badge badge-primary"><span id="rdp"></span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="cPanel.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-tools fa-fw"></i> cPanels <span class="badge badge-primary"><span id="cpanel"></span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="shell.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-file-code fa-fw"></i> Shells <span class="badge badge-primary"><span id="Shell"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="rdp" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-desktop fa-fw"></i> RDPs <span class="badge badge-primary"><span id="rdp"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="cPanel" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-tools fa-fw"></i> cPanels <span class="badge badge-primary"><span id="cpanel"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="shell" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-file-code fa-fw"></i> Shells <span class="badge badge-primary"><span id="Shell"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
@@ -259,23 +259,23 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
                         Send
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="mailer.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-leaf fa-fw"></i> Mailers <span class="badge badge-primary"><span id="mailer"></span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="smtp.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-envelope fa-fw"></i> SMTPs <span class="badge badge-primary"><span id="smtp"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="mailer" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-leaf fa-fw"></i> Mailers <span class="badge badge-primary"><span id="mailer"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="smtp" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-envelope fa-fw"></i> SMTPs <span class="badge badge-primary"><span id="smtp"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mail-bulk fa-sm pink-color"></i> Leads
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="leads-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-award"></i> 100% Validated Leads <span class="badge badge-primary"><span id="leads"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="leads-1" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-award"></i> 100% Validated Leads <span class="badge badge-primary"><span id="leads"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-tie fa-sm"></i> Accounts
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="business-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-business-time"></i> Premium<span class="badge badge-primary"><span id="scampage"></span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="business-2.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-mail-bulk"></i> USA Bank(Full INFO) <span class="badge badge-primary"><span id="scampage"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="account" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-business-time"></i> Premium<span class="badge badge-primary"><span id="scampage"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="banks" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-mail-bulk"></i> USA Bank(Full INFO) <span class="badge badge-primary"><span id="scampage"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
