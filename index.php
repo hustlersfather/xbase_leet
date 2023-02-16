@@ -1060,56 +1060,8 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
                                         </div>
                                     </div>
                                 </div>
-                                <script type="text/javascript">
-                                    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-                                    (function(){
-                                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                                    s1.async=true;
-                                    s1.src='https://embed.tawk.to/60bb67b9dd60a20abbe4bab4/1f7e0qbvo';
-                                    s1.charset='UTF-8';
-                                    s1.setAttribute('crossorigin','*');
-                                    s0.parentNode.insertBefore(s1,s0);
-                                    })();
-                                </script>
-                                <script type="text/javascript" src="layout/js/Chart.min.js"></script>
-                                <script>var clipboard = new Clipboard('.copydiv');</script>
-                                <script type="text/javascript">
-                                    // Set new default font family and font color to mimic Bootstrap's default styling
-                                    Chart.defaults.global.defaultFontFamily = '-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif';
-                                    Chart.defaults.global.defaultFontColor = '#2196F3';
-                                    
-                                    // Pie Chart Example
-                                    var ctx = document.getElementById("myPieChart");
-                                    var myPieChart = new Chart(ctx, {
-                                      type: 'pie',
-                                      data: {
-                                        labels: ['cPanels [8874]','Leads [131]','Shells [1500]','RDPs [77]','Mailers [388]','Scripts [3]', 'Tutorials [0]', 'Accounts [1548]', 'SMTPs [1794]', 'Webmails [12540]', 'FTPs [81]', 'SSH [153]'],
-                                        datasets: [{
-                                          data: ['8874','131','1500','77','388','3','0', '1548','1794','12540', '81', '153'],
-                                          backgroundColor: ['#007bff', '#dc3545', '#ffc107', '#28a745','#e1297d','#551a8b', '#D5B0F7', '#B5D2ED', '#212529', '#256633', '#633256', '#97de12' ],
-                                        }],
-                                      },
-                                    
-                                      options:{
-                                    	  cutoutPercentage:50,
-                                        tooltips: {
-                                        callbacks: {
-                                          label: function(tooltipItem, data) {
-                                            var dataset = data.datasets[tooltipItem.datasetIndex];
-                                            var meta = dataset._meta[Object.keys(dataset._meta)[0]];
-                                            var total = meta.total;
-                                            var currentValue = dataset.data[tooltipItem.index];
-                                            var percentage = parseFloat((currentValue/total*100).toFixed(1));
-                                            return currentValue + ' (' + percentage + '%)';
-                                          },
-                                          title: function(tooltipItem, data) {
-                                            return data.labels[tooltipItem[0].index];
-                                          }
-                                        }
-                                      }
-                                    }
-                                    });
-                                </script>
+                    
+                    
                             </div>
                         </div>
                     </b>
