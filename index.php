@@ -36,7 +36,7 @@
         <script>
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+            gtag('js', new Date());p poop
             gtag('set', {'$usrid': 'USER_ID'}); // Set the user ID using signed-in user_id.
             gtag('config', 'UA-177092549-1');
         </script>
@@ -235,16 +235,9 @@
                         Hosts
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="rdp.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-desktop fa-fw"></i> RDPs <span class="badge badge-primary">77</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="cPanel.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-tools fa-fw"></i> cPanels <span class="badge badge-primary">8874</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="shell.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-file-code fa-fw"></i> Shells <span class="badge badge-primary">1500</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="ssh.html" style="color: var(--font-color);"><span class="px-2"><i class="fab fa-linux"></i> SSH/WHM <span class="badge badge-primary">153</span></span></a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown mr-auto">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-leaf fa-fw fa-sm text-success" style="margin-right: 4px;"></i>Premium</a>
-                        <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="premium_shell.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-leaf fa-fw"></i> Premium Shells <span class="badge badge-primary">7</span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="rdp.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-desktop fa-fw"></i> RDPs <span class="badge badge-primary"><span id="rdp"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="cPanel.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-tools fa-fw"></i> cPanels <span class="badge badge-primary"><span id="cpanel"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="shell.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-file-code fa-fw"></i> Shells <span class="badge badge-primary"><span id="Shell"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
@@ -252,55 +245,35 @@
                         Send
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="mailer.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-leaf fa-fw"></i> Mailers <span class="badge badge-primary">388</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="smtp.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-envelope fa-fw"></i> SMTPs <span class="badge badge-primary">1794</span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="mailer.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-leaf fa-fw"></i> Mailers <span class="badge badge-primary"><span id="mailer"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="smtp.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-envelope fa-fw"></i> SMTPs <span class="badge badge-primary"><span id="smtp"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
                         <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-mail-bulk fa-sm pink-color"></i> Leads
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="leads-5.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-award"></i> 100% Validated Leads <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fa fa-fire orange-color"></i> Email Only <span class="badge badge-primary">111</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-2.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-passport"></i> Combo Email:Password <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-3.html" style="color: var(--font-color);"><span class="px-2"><i class="fab fa-battle-net"></i> Combo Username:Password <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-4.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-at"></i> Email Access <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-6.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-mobile-alt"></i> Phone Number Only <span class="badge badge-primary">20</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-7.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-phone-square"></i> Combo Phone:Password <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-8.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-inbox"></i> Full Data <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="leads-9.html" style="color: var(--font-color);"><span class="px-2"><i class="fab fa-facebook"></i> Social Media Data <span class="badge badge-primary">0</span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="leads-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-award"></i> 100% Validated Leads <span class="badge badge-primary"><span id="leads"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-tie fa-sm"></i> Business
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-tie fa-sm"></i> Accounts
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item waves-effect waves-light" href="business-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-business-time"></i> cPanel Webmail <span class="badge badge-primary">2336</span></span></a>
                             <a class="dropdown-item waves-effect waves-light" href="business-2.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-mail-bulk"></i> Godaddy Webmail <span class="badge badge-primary">83</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="business-3.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-globe"></i> Office365 Webmail <span class="badge badge-primary">8337</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="business-4.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-envelope-open-text"></i> Rackspace Webmail <span class="badge badge-primary">1784</span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown mr-auto">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-friends fa-sm"></i> Accounts
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" style="color: var(--font-color);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-friends fa-sm"></i>Other (Logs Info)
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-1.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-comments-dollar"></i> Marketing <span class="badge badge-primary">104</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-2.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-server"></i> Hosting / Domain <span class="badge badge-primary">15</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-3.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-gamepad"></i> Games <span class="badge badge-primary">18</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-4.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-cubes"></i> VPN/Socks Proxy&gt;Email Access <span class="badge badge-primary">1120</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-5.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-shopping-cart"></i> Shopping{Amazon, Ebay, ...} <span class="badge badge-primary">97</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-6.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-ethernet"></i> Programs {Antivirus, Adobe, ...} <span class="badge badge-primary">0</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-7.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-stream"></i> Stream {Netflix,HBO, ... } <span class="badge badge-primary">133</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-8.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-user-plus"></i> Dating <span class="badge badge-primary">40</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-9.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-graduation-cap"></i> Learning{ Udacity, Udemy, Lynda, ... } <span class="badge badge-primary">14</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-10.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-window-restore"></i> Torrent / File Host <span class="badge badge-primary">3</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-11.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-phone-volume"></i> Voip / Sip <span class="badge badge-primary">1</span></span></a>
-                            <a class="dropdown-item waves-effect waves-light" href="accounts-12.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-network-wired"></i> Other <span class="badge badge-primary">3</span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="scampage" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-comments-dollar"></i> O <span class="badge badge-primary"><span id="scampage"></span></span></a>
+                            <a class="dropdown-item waves-effect waves-light" href="tutorial" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-server"></i>USA Bank(Full INFO) <span class="badge badge-primary"><span id="Banks"></span></span></a>
                         </div>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle waves-effect waves-light" role="button" style="color: var(--font-color);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-drupal text-primary fa-sm"></i> Requests
+                        <a class="nav-link dropdown-toggle waves-effect waves-light" role="button" style="color: var(--font-color);" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fab fa-drupal text-primary fa-sm"></i>Seller
                         </a>
                         <div class="dropdown-menu dropdown-menu-left" style="color: var(--font-color); background-color: var(--color-nav);" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item waves-effect waves-light" href="requests.html" style="color: var(--font-color);"><span class="px-2"><i class="fas fa-user-plus"></i> Buyers Requests <span class="badge badge-primary"> 71</span></span></a>
@@ -393,8 +366,8 @@
             font-family: 'Raleway', sans-serif;
             }
         </style>
-        <link rel="stylesheet" href="layout/css/flexslider5.css" type="text/css">
-        <script src="layout/js/jquery.flexslider-min.js"></script>
+        <link rel="stylesheet" href="files/bootstrap/3/css/flexslider5.css" type="text/css">
+        <script src="files/bootstrap/3/js/jquery.flexslider-min.js"></script>
         <style>#tour {
             font-family: 'Raleway', sans-serif;
             }
@@ -454,6 +427,7 @@
             color: #505050;
             }
         </style>
+        <!--Modal Popup-->
         <div class="modal fade top" id="mod" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
             <div class="modal-dialog modal-frame modal-top modal-notify modal-danger" role="document">
                 <div class="modal-content">
