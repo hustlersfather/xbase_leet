@@ -9,11 +9,10 @@ include "includes/header.php";
 <!doctype html>
 
 <Body>
-<div class="alert alert-info text-left" role="alert" style="margin: 15px;">
-<ul>
+<center><div class="alert alert-info text-left" role="alert" style="margin: 15px;"><ul>
 <li>bank logs is used for Social engineering Hacked, It's not used for mass send.</li>
 <li>Click on check button before buy any Webmail to know if it's work or not.</li>
-<li>There is <b> 2288 </b> Webmail Available.</li>
+	<li>There is <b> 2288 </b> Webmail Available.</li></center>
 </ul>
 </div>
 <ul class="nav nav-tabs">
