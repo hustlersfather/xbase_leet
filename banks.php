@@ -6,57 +6,146 @@ include "includes/config.php";
 include "includes/header.php";
 ?>
 
-<!doctype html>
-
 <Body>
-<center><div class="alert alert-info text-left" role="alert" style="margin: 15px;"><ul>
-<li>bank logs is used for Social engineering Hacked, It's not used for mass send.</li>
-<li>Click on check button before buy any Webmail to know if it's work or not.</li>
-	<li>There is <b> 2288 </b> Webmail Available.</li></center>
+<div class="alert alert-info text-left" role="alert" style="margin: 15px;">
+<ul>
+<li>We Have Fresh E-mails Lists for Diffrents Countries ( You Can Use it for Spam ). </li>
+<li>Our E-mails Lists Guarante for you Good results because most of them are from Shops and Big Sites .</li>
+<li>Combo use for cracking (Brute forcing attack) not use for login to email.</li>
+<li>There is <b> 0 </b> Available.</li>
 </ul>
 </div>
-<ul class="nav nav-tabs">
-  <li class="active"><a href="#filter" data-toggle="tab">Filter</a></li>
-</ul>
-<div id="myTabContent" class="tab-content" >
-  <div class="tab-pane active in" id="filter"><table class="table"><thead><tr><th>Country</th>
-<th>Site Name</th>
-<th>Seller</th>
-<th></th></tr></thead><tbody><tr><td><select class='filterselect form-control input-sm' name="bank_country"><option value="">ALL</option>
-<?php
-$query = mysqli_query($dbcon, "SELECT DISTINCT(`country`) FROM `banks` WHERE `sold` = '0' ORDER BY country ASC");
-	while($row = mysqli_fetch_assoc($query)){
-	echo '<option value="'.$row['country'].'">'.$row['country'].'</option>';
-	}
-?>
-</select></td><td><input class='filterinput form-control input-sm' name="bank_sitename" size='3'></td><td><select class='filterselect form-control input-sm' name="bank_seller"><option value="">ALL</option>
-<?php
-$query = mysqli_query($dbcon, "SELECT DISTINCT(`resseller`) FROM `banks` WHERE `sold` = '0' ORDER BY resseller ASC");
-	while($row = mysqli_fetch_assoc($query)){
-		 $qer = mysqli_query($dbcon, "SELECT DISTINCT(`id`) FROM resseller WHERE username='".$row['resseller']."' ORDER BY id ASC")or die(mysql_error());
-		   while($rpw = mysqli_fetch_assoc($qer))
-			 $SellerNick = "seller".$rpw["id"]."";
-	echo '<option value="'.$SellerNick.'">'.$SellerNick.'</option>';
-	}
-?>
-</select></td><td><button id='filterbutton'class="btn btn-primary btn-sm" disabled>Filter <span class="glyphicon glyphicon-filter"></span></button></td></tr></tbody></table></div>
+	
+	</ul>
+
+<input type=hidden id="type" name="type" value="8" />
+<div class="row m-3 pt-1" style="color: var(--font-color);">
+<div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
+<label for="infos" style="margin-bottom: 10px; margin-top: 5px">Description:</label>
+<input type="search" class="form-control" id="infos" style="color: var(--font-color); background-color: var(--color-card);">
 </div>
-
-
-<table width="100%"  class="table table-striped table-bordered table-condensed sticky-header" id="table">
+<div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
+<label for="Country" style="margin-bottom: 10px; margin-top: 5px">Country :</label>
+<select name="country" id="country" class="form-control" style="color: var(--font-color); background-color: var(--color-card);">
+<option value="">All Countries</option>
+</select>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
+<label for="Country" style="margin-bottom: 10px; margin-top: 5px">Country :</label>
+<select name="country" id="country" class="form-control" style="color: var(--font-color); background-color: var(--color-card);">
+<option value="">All Countries</option>
+</select>
+</div>
+<div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
+<label for="seller" style="margin-bottom: 10px; margin-top: 5px">Seller :</label>
+<select name="seller" id="seller" class="form-control" style="color: var(--font-color); background-color: var(--color-card);">
+<option value="">All</option>
+</select>
+</div>
+</div>
+<div class="row m-2 pt-3 " style="max-width:100%; color: var(--font-color); background-color: var(--color-card);">
+<div class="col-sm-12 table-responsive">
+<table id="lead_data" class="display responsive table-hover" style="width:100%; color: var(--font-color); background-color: var(--color-card);">
 <thead>
-    <tr>
-      <th scope="col" >Country</th>
-      <th scope="col">Bank Name</th>
-      <th scope="col">Balance</th>
-      <th scope="col">Available Information</th>
-      <th scope="col">Seller</th>
-      <th scope="col">Price</th>
-      <th scope="col">Added on </th>
-      <th scope="col">Buy</th>
-    </tr>
+<tr>
+<th data-priority="1">Country</th>
+<th data-priority="2">Description</th>
+<th data-priority="3">balance N</th>
+<th data-priority="4">Seller</th>
+<th data-priority="5">Price</th>
+<th data-priority="6">Added on </th>
+<th class="all">Buy</th>
+</tr>
 </thead>
-  <tbody>
+</table>
+</div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
+<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-notify modal-success" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<p class="heading" id="myModalHeader"></p>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true" class="white-text">&times;</span>
+</button>
+</div>
+<div class="modal-body" id="modelbody">
+</div>
+<div class="modal-footer justify-content-center">
+<a type="button" class="btn btn-outline-success waves-effect" data-dismiss="modal">Close</a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="modalConfirmBuy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered modal-sm modal-notify modal-info" role="document">
+
+<div class="modal-content text-center">
+
+<div class="modal-header d-flex justify-content-center">
+<p class="heading">Are you sure?</p>
+</div>
+
+<div class="modal-body">
+<i class='fas fa-shopping-cart fa-4x animated rotateIn'></i>
+</div>
+
+<div class="modal-footer flex-center">
+<a onClick='confirmbye()' class="btn btn-outline-info waves-effect" data-dismiss="modal">Yes</a>
+<a type="button" class="btn btn-info" data-dismiss="modal">No</a>
+</div>
+</div>
+
+</div>
+</div>
+
+
+<div class="modal fade top" id="modalCoupon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
+<div class="modal-dialog modal-frame modal-top modal-notify modal-danger" role="document">
+
+<div class="modal-content">
+
+<div class="modal-body">
+<div class="row d-flex justify-content-center align-items-center">
+<img src="layout/images/balance.png">
+<span class="pt-3 mx-4" style="font-size: 14 px"><b>No enough balance !</b> Please refill your balance</span>
+<a type="button" href="addBalance" onclick="window.open(this.href);return false;" class="btn btn-danger">Add Balance
+<i class="fas fa-book ml-1 white-text"></i>
+</a>
+<a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
  <?php
 include("cr.php");
@@ -122,23 +211,19 @@ function openitem(order){
 }
 
 </script>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel"></h4>
-      </div>
-      <div class="modal-body" id="modelbody">
-
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
+<div class="modal fade top" id="modalCoupon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
+ <div class="modal-dialog modal-frame modal-top modal-notify modal-danger" role="document"<div class="modal-content">
+<div class="modal-body">
+</a>
+<a type="button" class="btn btn-outline-danger waves-effect" data-dismiss="modal">No, thanks</a>
 </div>
+</div>
+</div>
+
+</div>
+</div>
+
+<script>
 
 <script type="text/javascript">
              function ajaxinfo() {
