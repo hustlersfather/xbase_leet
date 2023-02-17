@@ -71,7 +71,7 @@ h6 {
 <body>
 <script type="text/javascript">
 $(window).on('load', function() {
-        logindiv(1,'Login - Jerux SHOP','login',1);
+        logindiv(1,'Login - Jerux SHOP','login.html',1);
 });</script>
 <!--Pulling Awesome Font -->
 
