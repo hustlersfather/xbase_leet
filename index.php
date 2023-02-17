@@ -70,16 +70,7 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
             window.FontAwesomeConfig = { autoReplaceSvg: false }
         </script>
          <script type="text/javascript">
-function setTooltip(btn, message) {
-  console.log("hide-1");
-  $(btn).tooltip('hide')
-    .attr('data-original-title', message)
-    .tooltip('show');
-     console.log("show");
-}
-function hideTooltip(btn) {
-setTimeout(function() 
-           {$(btn).tooltip('hide'); console.log("hide-2");}, 1000);}
+  <script src="js/plugins.js"></script>
 </script>
         <style>@import url(https://fonts.googleapis.com/css?family=Roboto:400);
             .navbar-nav .dropdown-menu
