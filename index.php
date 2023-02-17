@@ -63,6 +63,8 @@ $usrid = mysqli_real_escape_string($dbcon, $_SESSION['sname']);
         <link rel="stylesheet" href="files/bootstrap/3/fonts/iconic/css/material-design-iconic-font.min.css">
         <script src="files/js/main.js"></script>
          <script src="files/js/jquery.js"></script>
+        <script src="files/js/Sortable.js"></script>
+       <script src="files/js/table-head.js"></script>
         <script type="text/javascript">
             // Notice how this gets configured before we load Font Awesome
             window.FontAwesomeConfig = { autoReplaceSvg: false }
