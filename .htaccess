@@ -1,9 +1,20 @@
-ErrorDocument 404 /JERUX/buyer/index.html
+ErrorDocument 404 /index.html
 RewriteEngine on
+Options -Indexes
 RewriteRule ^index.html$  index.php
+RewriteRule ^signup.html$  signup.php
+RewriteRule ^forget.html$  forget.php
+RewriteRule ^reset.html$  resetpass.php
+RewriteRule ^log-in$  login.php
+RewriteRule ^loginpage1.html$  loginpage1.php
+RewriteRule ^loginpage2.html$  loginpage2.php
+RewriteRule ^loginpage3.html$  loginpage3.php
+RewriteRule ^loginform.html$  loginform.php
+RewriteRule ^signupform.html$  signupform.php
+RewriteRule ^passform.html$  passform.php
+RewriteRule ^homepage$  index.php
 RewriteRule ^ajaxinfo.html$  ajax.php
 RewriteRule ^mailer.html$  mailer.php
-RewriteRule ^login$  login.php
 RewriteRule ^shell.html$  shell.php
 RewriteRule ^leads.html$  leads.php
 RewriteRule ^premium.html$  premium.php
@@ -70,6 +81,7 @@ RewriteRule ^PMCheck.html$ PMcheck.php
 RewriteRule ^Payment.html$ payment.php
 
 Order Deny,Allow
+Deny from 172.68.62.30
 Deny from 41.87.128.0-41.87.159.255
 Deny from 41.92.0.0-41.92.127.255
 Deny from 41.137.0.0-41.137.255.255
@@ -137,9 +149,9 @@ RewriteCond %{QUERY_STRING} https\: [NC,OR]
 
 RewriteCond %{QUERY_STRING} \=\|w\| [NC,OR]
 
-RewriteCond %{QUERY_STRING} ^(.*)/self/(.*).html$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)/self/(.*)$ [NC,OR]
 
-RewriteCond %{QUERY_STRING} ^(.*)cPath=http://(.*).html$ [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)cPath=http://(.*)$ [NC,OR]
 
 RewriteCond %{QUERY_STRING} (\<|%3C).*script.*(\>|%3E) [NC,OR]
 
@@ -177,4 +189,4 @@ RewriteCond %{QUERY_STRING} (;|<|>|'|"|\)|%0A|%0D|%22|%27|%3C|%3E|%00).*(/\*|uni
 
 RewriteCond %{QUERY_STRING} (sp_executesql) [NC]
 
-RewriteRule ^(.*).html$ - [F,L]
+RewriteRule ^(.*)$ - [F,L]
