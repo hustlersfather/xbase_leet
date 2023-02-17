@@ -7,6 +7,14 @@ include "includes/header.php";
 ?>
 
 <Body>
+<div class="p-2">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round">
+</span>
+</label>
+</div>
+</div>
 <div class="alert alert-info text-left" role="alert" style="margin: 15px;">
 <ul>
 <li>We Have Fresh E-mails Lists for Diffrents Countries ( You Can Use it for Spam ). </li>
@@ -15,20 +23,11 @@ include "includes/header.php";
 <li>There is <b> 0 </b> Available.</li>
 </ul>
 </div>
-	
-	</ul>
-
 <input type=hidden id="type" name="type" value="8" />
 <div class="row m-3 pt-1" style="color: var(--font-color);">
 <div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
-<label for="infos" style="margin-bottom: 10px; margin-top: 5px">Description:</label>
+ <label for="infos" style="margin-bottom: 10px; margin-top: 5px">Description:</label>
 <input type="search" class="form-control" id="infos" style="color: var(--font-color); background-color: var(--color-card);">
-</div>
-<div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
-<label for="Country" style="margin-bottom: 10px; margin-top: 5px">Country :</label>
-<select name="country" id="country" class="form-control" style="color: var(--font-color); background-color: var(--color-card);">
-<option value="">All Countries</option>
-</select>
 </div>
 <div class="col-xs-6 col-sm-4 col-lg-2" style="display:inline-block">
 <label for="Country" style="margin-bottom: 10px; margin-top: 5px">Country :</label>
@@ -44,13 +43,15 @@ include "includes/header.php";
 </div>
 </div>
 <div class="row m-2 pt-3 " style="max-width:100%; color: var(--font-color); background-color: var(--color-card);">
+
+	
 <div class="col-sm-12 table-responsive">
-<table id="lead_data" class="display responsive table-hover" style="width:100%; color: var(--font-color); background-color: var(--color-card);">
+<table id="banks" class="display responsive table-hover" style="width:100%; color: var(--font-color); background-color: var(--color-card);">
 <thead>
 <tr>
 <th data-priority="1">Country</th>
 <th data-priority="2">Description</th>
-<th data-priority="3">balance N</th>
+<th data-priority="3">Balance N</th>
 <th data-priority="4">Seller</th>
 <th data-priority="5">Price</th>
 <th data-priority="6">Added on </th>
@@ -60,22 +61,6 @@ include "includes/header.php";
 </table>
 </div>
 </div>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="true">
 <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-notify modal-success" role="document">
 <div class="modal-content">
@@ -136,8 +121,7 @@ include "includes/header.php";
 
 </div>
 </div>
-	
-	
+
 	
 	
 	
